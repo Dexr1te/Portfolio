@@ -2,11 +2,11 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import evogym from "../../Assets/Projects/evogym.png";
+import test_pdd from "../../Assets/Projects/test.png";
+import booking from "../../Assets/Projects/booking.png";
+import estate from "../../Assets/Projects/estate.png";
+import weather from "../../Assets/Projects/weather.png";
 
 function Projects() {
   return (
@@ -22,7 +22,7 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={evogym}
               isBlog={false}
               title="Modern Fitness Landing Page"
               description="A modern responsive landing page with UI, animations, and smooth scroll, built using React, TypeScript, and Tailwind CSS. Features Framer Motion for animations and React Hook Form for contact forms."
@@ -33,7 +33,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={test_pdd}
               isBlog={false}
               title="PDD Website"
               description="Interactive road rules quiz application. Users answer questions with images, get results, and can share leads. Built with React 19, TypeScript, Zustand, and Framer Motion."
@@ -44,7 +44,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={booking}
               isBlog={false}
               title="pro-pdd-booking"
               description="Online booking service for driving schools. Features a calendar, instructor selection, and Google Sheets integration via Apps Script. Built as a SPA with React and TypeScript."
@@ -55,7 +55,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={estate}
               isBlog={false}
               title="Real Estate CRM System"
               description="Full-stack CRM platform for real estate agencies to manage clients, properties, and sales pipelines. Built with React, TypeScript, Spring Boot, Flutter, and PostgreSQL."
@@ -66,7 +66,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={weather}
               isBlog={false}
               title="Weather App"
               description="A clean and modern weather forecast application built with React, TypeScript, React Query, and Zustand. Fetches real-time data from OpenWeather API and visualizes it with Recharts."
