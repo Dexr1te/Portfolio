@@ -15,11 +15,19 @@ function Github() {
         Days I <strong className="purple">Code</strong>
       </h1>
       <GitHubCalendar
-        username="soumyajit4419"
+        username="Dexr1te"
         blockSize={30}
         blockMargin={10}
         color="#c084f5"
         fontSize={20}
+        transformData={(data) => {
+          const sixMonthsAgo = new Date();
+          sixMonthsAgo.setMonth(sixMonthsAgo.getMonth() - 6);
+          return data.filter((day) => {
+            const date = new Date(day.date);
+            return date >= sixMonthsAgo;
+          });
+        }}
       />
     </Row>
   );

@@ -1,9 +1,10 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
+import { SiVercel } from "react-icons/si";
+import { SlCursor } from "react-icons/sl";
 import macOs from "../../Assets/TechIcons/Apple MacOSX.svg";
 import chrome from "../../Assets/TechIcons/Google Chrome.svg";
 import vsCode from "../../Assets/TechIcons/vscode.svg";
-import intelliJ from "../../Assets/TechIcons/intellij-idea.svg";
 
 function Toolstack() {
   return (
@@ -20,10 +21,13 @@ function Toolstack() {
         <img src={vsCode} alt="vsCode" className="tech-icon-images" />
         <div className="tech-icons-text">Vs Code</div>
       </Col>
-
       <Col xs={4} md={2} className="tech-icons ">
-        <img src={intelliJ} alt="go" className="tech-icon-images" />
-        <div className="tech-icons-text">IntelliJ</div>
+        <SlCursor fontSize={"24px"} />
+        <div className="tech-icons-text">Cursor</div>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons ">
+        <SiVercel fontSize={"24px"} />
+        <div className="tech-icons-text">Vercel</div>
       </Col>
     </Row>
   );
